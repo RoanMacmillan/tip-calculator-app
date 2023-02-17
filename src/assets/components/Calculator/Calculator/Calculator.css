@@ -1,0 +1,105 @@
+.CalculatorContainer {
+
+    width: 375px;
+    border-radius: 25px 25px 0px 0px;
+    
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Logo {
+
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40.86px;
+}
+
+
+.CalcBtnsContainer {
+    padding-left: 32px;
+    padding-right: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+
+.BillInput, .PplInput {
+
+    margin-top: 6px;
+}
+
+.error-message {
+
+    position: absolute;
+    right: 32px;
+    color: #E17457;
+    top: 0;
+}
+
+
+
+.Dollar, .Person {
+
+    position: absolute;
+    top: 44px;
+    left: 50px;
+}
+
+.BillContainer, .PplContainer {
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;    
+    position: relative;
+
+}
+
+.ResultsContainer {
+
+    background-color: #00474B;
+    height: 257px;
+    border-radius: 15px;
+    width: 327px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.AmountContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.AmountContainer:first-of-type {
+
+    padding-top: 37px;
+}
+
+.AmountContainer:last-of-type {
+
+    margin-top: 20px;
+}
+
+.AmountChild {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.PplContainer {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+

@@ -1,0 +1,93 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+
+  min-height: 100vh;
+background-color: hsl(185, 41%, 84%);
+
+}
+
+.App {
+  
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+.App {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+input, .TipButton {
+  font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+}
+
+span:first-of-type {
+  color: #5E7A7D;
+}
+
+#tip {
+  padding-left: 32px;
+
+}
+
+.AmountChild span:last-of-type {
+
+  color: #5E7A7D;
+  font-size: 13px;
+}
+
+.AmountChild span:first-of-type {
+
+  color: white;
+  font-size: 16px;
+}
+
+.TotalPersonAmt, .TipPersonAmt {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  
+  color: #26C2AE !important;
+
+}
+
+

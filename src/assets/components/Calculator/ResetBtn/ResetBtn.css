@@ -1,0 +1,33 @@
+.ResetBtn {
+
+
+    width: 100%;
+    background: #26C2AE;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #00474B;
+    border: none;
+    height: 48px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 32px;
+    transition: .2s all;
+    
+}
+
+.ResetBtn:hover {
+
+    background: #9FE8DF;
+}
+
+.Disabled {
+
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Disabled.ResetBtn:hover {
+
+    background: #26C2AE;
+}

@@ -1,0 +1,22 @@
+.TipButton {
+
+    height: 48px;
+    background: #00474B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all .2s;
+    cursor: pointer
+}
+
+.TipButton:hover {
+
+    background: #9FE8DF;
+    color: #00474B;
+
+}
+
+.TipButton.selected {
+    background: #26C2AE;    
+    color: #00474B;
+  }
