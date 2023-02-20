@@ -7,6 +7,7 @@ function InputField({type = 'text', placeholder, value, onChange, className, lab
     <div>
     <label>{label}</label>
       <input 
+        label={label}
         type={type} 
         placeholder={placeholder} 
         value={value ? value : ''} 
