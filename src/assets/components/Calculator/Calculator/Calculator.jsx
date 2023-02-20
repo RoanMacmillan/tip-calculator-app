@@ -113,6 +113,7 @@ return totalAmount >= 0 ? totalAmount.toFixed(2) : '0.00'  }
                 <TipButton percentage={25} handleTipClick={handleTipClick} isSelected={activeButton === 25} />
                 <TipButton percentage={50} handleTipClick={handleTipClick} isSelected={activeButton === 50} />
                 <InputField
+                  label=''
                   value={tipPercentage}
                   onChange={handleTipPercentageChange}
                   className={`TipInput ${isTipPercentageValid ? '' : 'invalid'}`}
