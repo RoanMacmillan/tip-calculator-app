@@ -91,3 +91,24 @@ span:first-of-type {
 }
 
 
+@media screen and (min-width: 1000px) { 
+
+
+
+.App {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+  height: 100vh;
+}
+
+.Logo {
+
+  margin-bottom: 87.86px !important;
+  margin-top: 0px !important;
+}
+
+}

@@ -2,12 +2,12 @@
 
     width: 375px;
     border-radius: 25px 25px 0px 0px;
-    
+
     min-height: 100vh;
     background: white;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .Logo {
@@ -21,15 +21,16 @@
 .CalcBtnsContainer {
     padding-left: 32px;
     padding-right: 32px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 16px;
 }
 
 
-.BillInput, .PplInput {
+.BillInput,
+.PplInput {
 
     margin-top: 6px;
 }
@@ -44,19 +45,21 @@
 
 
 
-.Dollar, .Person {
+.Dollar,
+.Person {
 
     position: absolute;
     top: 44px;
     left: 50px;
 }
 
-.BillContainer, .PplContainer {
+.BillContainer,
+.PplContainer {
 
     margin-top: 32px;
     margin-bottom: 32px;
     padding-left: 32px;
-    padding-right: 32px;    
+    padding-right: 32px;
     position: relative;
 
 }
@@ -77,7 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .AmountContainer:first-of-type {
@@ -103,3 +106,124 @@
     gap: 16px;
 }
 
+
+
+@media screen and (min-width: 1000px) {
+
+
+    .CalculatorContainer {
+
+        width: 920px;
+        box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+        border-radius: 25px;
+        min-height: unset;
+        height: 481px;
+        
+
+
+    }
+
+    form {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+
+    }
+
+    .CalcBtnsContainer {
+
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .InputContainer {
+
+        width: 379px;
+    }
+
+    .BillContainer,
+    .PplContainer,
+    #tip {
+
+        padding: 0;
+    }
+
+    .ResultsContainer {
+
+        width: 413px;
+        height: 417px;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ResetBtn {
+
+        margin-top: auto;
+        margin-bottom: 40px;
+        width: 333px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Dollar,
+    .Person {
+        top: 44px;
+        left: 19.26px;
+    }
+
+
+    .BillContainer {
+
+        margin-bottom: 40px;
+    }
+
+    .TipButton {
+
+        width: 117px;
+        
+    }
+
+    .PplContainer {
+
+        margin-top: 40px;
+    }
+
+    .TipPersonAmt, .TotalPersonAmt {
+
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 71px;
+        /* identical to box height */
+
+        text-align: right;
+        letter-spacing: -1px;
+    }
+
+
+    .AmountContainer {
+
+     
+        padding: 0 !important;
+    }
+
+    .AmountContainer:first-of-type {
+
+        margin-top: 40px;
+    }
+
+    .AmountContainer:last-of-type {
+
+        margin-top: 25px;
+    }
+
+    .ResultsContainer {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
